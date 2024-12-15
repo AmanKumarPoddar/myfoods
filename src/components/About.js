@@ -24,7 +24,10 @@ class About extends Component {
             </h1>
           )}
         </UserContext.Consumer>
-        <h2>This is Namaste React Course</h2>
+        <h2>
+          This portion of the webpage refers to the working of Life Cycle
+          Methods in Class Based Components
+        </h2>
 
         <UserClass name={"Aman"} location={"Dharan"} contact={"9812310120"} />
         <UserClass
