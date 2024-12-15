@@ -1,5 +1,4 @@
 import RestroCard, { withPromotedLabel } from "./RestroCard";
-
 import { useState, useEffect, useContext } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -9,10 +8,8 @@ import UserContext from "../utils/UserContext";
 const Body = () => {
   const { loggedInUser, setUserName } = useContext(UserContext);
   const [searchText, setSearchText] = useState("");
-
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
-
   const RestroCardPromoted = withPromotedLabel(RestroCard);
 
   useEffect(() => {

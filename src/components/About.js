@@ -6,6 +6,7 @@ import UserContext from "../utils/UserContext";
 class About extends Component {
   constructor(props) {
     super(props);
+    console.log(props);
     console.log("Parent Constructor");
   }
   componentDidMount() {
@@ -26,6 +27,11 @@ class About extends Component {
         <h2>This is Namaste React Course</h2>
 
         <UserClass name={"Aman"} location={"Dharan"} contact={"9812310120"} />
+        <UserClass
+          name={"Amadsdan"}
+          location={"Dharan"}
+          contact={"9812310120"}
+        />
         {/* <User /> */}
       </div>
     );
